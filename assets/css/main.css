@@ -126,8 +126,8 @@
 /* Type */
 
 	body, input, select, textarea {
-		color: #414f57;
-		font-family: "Source Sans Pro", Helvetica, sans-serif;
+		color: #1b2123;
+		font-family: 'Crimson Text', serif;
 		font-size: 14pt;
 		font-weight: 300;
 		line-height: 2;
@@ -172,8 +172,9 @@
 			color: #ff7496;
 		}
 
+
 	strong, b {
-		color: #313f47;
+		color: #1b2123;
 	}
 
 	em, i {
@@ -185,7 +186,7 @@
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #313f47;
+		color: #1b2123;
 		line-height: 1.5;
 		margin: 0 0 0.75em 0;
 	}
@@ -262,7 +263,7 @@
 			}
 
 	label {
-		color: #313f47;
+		color: #1b2123;
 		display: block;
 		font-size: 0.9em;
 		margin: 0 0 0.75em 0;
@@ -367,7 +368,7 @@
 		input[type="checkbox"] + label,
 		input[type="radio"] + label {
 			text-decoration: none;
-			color: #414f57;
+			color: #1b2123;
 			cursor: pointer;
 			display: inline-block;
 			font-size: 1em;
@@ -452,6 +453,7 @@
 		text-decoration: none;
 		position: relative;
 		border-bottom: none;
+
 	}
 
 		.icon:before {
@@ -481,12 +483,13 @@
 
 	ul {
 		list-style: disc;
-		margin: 0 0 1.5em 0;
-		padding-left: 1em;
+		width: max-content;
+		margin: 0 auto;
 	}
 
 		ul li {
 			padding-left: 0.5em;
+			margin: 0px 10px;
 		}
 
 		ul.alt {
@@ -507,14 +510,43 @@
 		ul.icons {
 			cursor: default;
 			list-style: none;
-			padding-left: 0;
 			margin-top: -0.675em;
 		}
 
 			ul.icons li {
 				display: inline-block;
+				width: 100px;
 				padding: 0.675em 0.5em;
 			}
+
+		.tooltip .tooltiptext {
+			display: inline;
+			position: relative;
+			visibility: hidden;
+			width: 120px;
+			background-color: white;
+			color: #1b2123;
+			padding: 0px 0;
+			border-radius: 3px;
+			opacity: 0;
+			transition: opacity 1s;
+			
+			/* Position the tooltip text - see examples below! */
+			width: 5px;
+			top: 100%;
+			left: 50%;
+			margin-left: -140%; 
+			text-align: center;
+			}
+
+			/* Show the tooltip text when you mouse over the tooltip container */
+			.tooltip:hover .tooltiptext {
+			visibility: visible;
+			opacity: 1;
+			}
+			
+
+
 
 				ul.icons li a {
 					text-decoration: none;
@@ -624,7 +656,7 @@
 		background-color: transparent;
 		border-radius: 4px;
 		border: solid 1px #c8cccf;
-		color: #414f57 !important;
+		color: #1b2123 !important;
 		cursor: pointer;
 		text-align: center;
 		text-decoration: none;
